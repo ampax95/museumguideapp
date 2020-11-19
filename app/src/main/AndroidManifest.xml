@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.androidstudioptyxiaki">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--QR PERMITS-->
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"></uses-permission>
+
+
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+
+<!--        QR-->
+        <activity
+            android:name=".ActivityQR"
+            android:label="Σκανάρετε τον κωδικό QR"
+            android:parentActivityName=".ActivityQR" />
+
+        <activity
+            android:name=".Activityqrwebsite"
+            android:parentActivityName=".ActivityQR" />
+
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"></meta-data>
+
+
+<!--Mainactivity Info-->
+        <activity
+            android:name=".InformationActivity"
+            android:label="ΕΞΑΦΑΝΙΣΜΕΝΑ ΠΤΗΝΑ"
+            android:parentActivityName=".MainActivity" />
+
+
+        <activity
+            android:name=".InformationActivity1"
+            android:label="ΤΟ ΔΙΟΡΑΜΑ ΤΟΥ ΔΑΣΟΥΣ"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".InformationActivity2"
+            android:label="ΤΟ ΔΙΟΡΑΜΑ ΤΩΝ ΥΔΡΟΒΙΩΝ ΠΟΥΛΙΩΝ"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".InformationActivity3"
+            android:label="ΤΟ ΔΙΟΡΑΜΑ ΤΗΣ ΑΓΡΙΑΣ ΠΑΝΙΔΑΣ"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".InformationActivity4"
+            android:label="ΤΟ ΔΙΟΡΑΜΑ ΤΟΥ ΑΡΚΤΙΚΟΥ ΒΙΟΤΟΠΟΥ"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".InformationActivity5"
+            android:label="ΔΙΟΡΑΜΑ ΜΕ ΣΚΗΝΕΣ ΔΡΑΣΗΣ ΣΤΗΝ ΦΥΣΗ"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".InformationActivity6"
+            android:label="Η ΖΩΗ ΣΤΑ ΒΡΑΧΙΑ"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".InformationActivity7"
+            android:label="ΕΛΕΥΘΕΡΑ ΘΗΛΑΣΤΙΚΑ"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".InformationActivity8"
+            android:label="Η ΖΩΗ ΤΗ ΝΥΧΤΑ"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".InformationActivity9"
+            android:label="ΤΟ ΔΙΟΡΑΜΑ ΜΕΤΕΩΡΩΝ"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".InformationActivity10"
+            android:label="ΤΑ ΒΙΚΤΩΡΙΑΝΑ ΕΚΘΕΜΑΤΑ"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".InformationActivity11"
+            android:label="ΑΡΠΑΚΤΙΚΑ ΠΤΗΝΑ"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".InformationActivity12"
+            android:label="ΠΟΥΛΙΑ ΤΗΣ ΘΑΛΑΣΣΑΣ ΚΑΙ ΤΟΥ ΩΚΕΑΝΟΥ"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".InformationActivity13"
+            android:label="ΕΞΩΤΙΚΑ ΚΑΙ ΠΟΛΥΧΡΩΜΑ ΠΟΥΛΙΑ"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+
+            android:name=".InformationActivity14"
+            android:label="ΣΠΑΝΙΑ ΚΑΙ ΙΔΙΑΙΤΕΡΑ ΠΟΥΛΙΑ"
+            android:parentActivityName=".MainActivity" />
+
+
+
+
+<!--        Mushactivity info-->
+
+        <activity
+            android:name=".InformationActivity15"
+            android:label="Γλυπτά και ζωγραφιές"
+            android:parentActivityName=".MushActivity" />
+
+        <activity
+            android:name=".InformationActivity16"
+            android:label="Δύο είδη τρούφας"
+            android:parentActivityName=".MushActivity" />
+
+        <activity
+            android:name=".InformationActivity17"
+            android:label="Γλυπτά"
+            android:parentActivityName=".MushActivity" />
+
+        <activity
+            android:name=".InformationActivity18"
+            android:label="Ότζι"
+            android:parentActivityName=".MushActivity" />
+
+
+        <activity
+            android:name=".InformationActivity19"
+            android:label="Γαστρομύκητες"
+            android:parentActivityName=".MushActivity" />
+
+
+        <activity
+            android:name=".InformationActivity20"
+            android:label="Καλώς ήρθατε στο μονοπάτι των μανιταριών."
+            android:parentActivityName=".MushActivity" />
+
+        <activity
+            android:name=".InformationActivity21"
+            android:label="Καλώς ήρθατε στο μονοπάτι των μανιταριών."
+            android:parentActivityName=".MushActivity" />
+
+        <activity
+            android:name=".InformationActivity22"
+            android:label="Καλώς ήρθατε στο μονοπάτι των μανιταριών."
+            android:parentActivityName=".MushActivity" />
+
+        <activity
+            android:name=".InformationActivity23"
+            android:label="ΜΑΝΙΤΑΡΟΦΙΛΙΚΟΙ ΣΥΛΛΟΓΟΙ"
+            android:parentActivityName=".MushActivity" />
+
+
+
+
+
+
+        <!--        Main Activities-->
+
+
+
+        <activity android:name=".MainActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name=".MushActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+
+
+
+
+<!--        Launcher-->
+
+
+
+        <activity android:name=".tourType">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+    </application>
+
+</manifest>

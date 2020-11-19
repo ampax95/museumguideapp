@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MushActivity"
+    android:background="@color/bg_fun">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greenfun"
+            android:text="Καλώς ήρθατε στο θαυμαστό μικρόκοσμο των μανιταριών."
+            android:textSize="16sp"
+            android:layout_below="@+id/musMap"/>
+
+
+        <ImageView
+            android:id="@+id/musMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            android:src="@drawable/bgmanitaria"
+            tools:ignore="ContentDescription"/>
+
+        <Button
+            android:id="@+id/infoBtn15"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/picinf">
+
+        </Button>
+
+        <Button
+            android:id="@+id/infoBtn16"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/mushiinf">
+
+        </Button>
+
+        <Button
+            android:id="@+id/infoBtn17"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/picinf">
+
+        </Button>
+
+        <Button
+            android:id="@+id/infoBtn18"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/picinf">
+
+        </Button>
+
+        <Button
+            android:id="@+id/infoBtn19"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/mushiinf">
+
+        </Button>
+
+        <Button
+            android:id="@+id/infoBtn20"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/mushiinf">
+
+        </Button>
+
+        <Button
+            android:id="@+id/infoBtn21"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/mushiinf">
+
+        </Button>
+
+        <Button
+            android:id="@+id/infoBtn22"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/mushiinf">
+
+        </Button>
+
+        <Button
+            android:id="@+id/infoBtn23"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/picinf">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/botNvg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/musMap">
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/RouteInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/yellowfun"
+                    android:text="@string/txtmanitaria"/>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <Button
+                    android:id="@+id/BtnAR"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:textColor="#FFFF"
+                    android:text="@string/AR"
+                    android:background="@drawable/buttonshape"
+                    />
+
+                <Button
+                    android:id="@+id/BtnVR"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:textColor="#FFFF"
+                    android:onClick="openVR2"
+                    android:text="@string/VR"
+                    android:background="@drawable/buttonshape" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
